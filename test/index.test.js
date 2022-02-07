@@ -58,9 +58,9 @@ describe('Dates module', () => {
     expect(weekdays).toContain(day)
   })
 
-  test('Return today\'s date in the format: May 29, 2019', () => {
+  test('Return today\'s date in the format: February 7, 2022', () => {
     const cal = dates.calendar()
-    expect(cal).toMatch(/^[A-z]{3} [0-9]{2}, [0-9]{4}$/)
+    expect(cal).toMatch(/^[A-z]{8} [0-9]{1}, [0-9]{4}$/)
   })
 
   test('Return the current time in the format: 03:21:51 PM', () => {
